@@ -1,0 +1,149 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+
+/* 仅用于演示 */
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+figure.sample3 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 330px;
+  max-height: 220px;
+  width: 100%;
+  background: #000;
+  text-align: left;
+}
+
+figure.sample3 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+figure.sample3 img {
+  max-width: 100%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+          transition: opacity 0.35s;
+}
+
+figure.sample3 div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 3em;
+  width: 100%;
+  height: 100%;
+}
+
+figure.sample3 div::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 100%;
+  border-left: 4px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+figure.sample3 h2,
+figure.sample3 p, figure.sample3 a{
+  margin: 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+          transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+
+figure.sample3 h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(30%, 0%, 0);
+          transform: translate3d(30%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+figure.sample3 h2 span {
+  font-weight: 800;
+}
+
+figure.sample3 p {
+  font-weight: 200;
+  -webkit-transform: translate3d(0%, 30%, 0);
+          transform: translate3d(0%, 30%, 0);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+figure.sample3 a {
+  left: 50px;
+  right: 0;
+  top: 170px;
+  bottom: 0;
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+}
+
+figure.sample3:hover img {
+  opacity: 0.3;
+}
+
+figure.sample3:hover div h2,
+figure.sample3:hover div p, figure.sample3:hover div a{
+  visibility: visible;
+}
+
+figure.sample3:hover div h2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+          transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+figure.sample3:hover div p {
+  opacity: 0.9;
+  -webkit-transform: translate3d(0%, 0%, 0);
+          transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+figure.sample3:hover div a {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+}
+
+figure.sample3:hover div::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
